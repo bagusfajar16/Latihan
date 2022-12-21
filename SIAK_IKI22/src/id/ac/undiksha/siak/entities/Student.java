@@ -1,4 +1,5 @@
 package id.ac.undiksha.siak.entities;
+import id.ac.undiksha.organization.*;
 
 public class Student {
 	
@@ -6,15 +7,15 @@ public class Student {
 	private String name;
 	private String address;
 	private boolean gender;
-	private String studyProgram;
 	private String department;
 	private String faculty;
+	
+	private StudyProgram studyProgram;
 	
 	public Student() {
 		this.name 			= "<invalid name>";
 		this.nim 			= "<invalid nim>";
 		this.address 		= "<invalid address>";
-		this.studyProgram 	= "<invalid study program>";
 		this.department	 	= "<invalid department>";
 		this.faculty 		= "<invalid faculty>";
 	}
@@ -28,7 +29,6 @@ public class Student {
 		this.name = name;
 		this.address = address;
 		this.gender = gender;
-		this.studyProgram = studyProgram;
 		this.department = department;
 		this.faculty = faculty;
 	}
@@ -39,7 +39,6 @@ public class Student {
 		System.out.println("NIM: " 				+ this.nim);
 		System.out.println("Name: " 			+ this.name);
 		System.out.println("Address: " 			+ this.address);
-		System.out.println("Study Program: " 	+ this.studyProgram);
 		System.out.println("Department: " 		+ this.department);
 		System.out.println("Faculty: " 			+ this.faculty);
 		
@@ -78,14 +77,6 @@ public class Student {
 		this.gender = gender;
 	}
 
-	public String getStudyProgram() {
-		return studyProgram;
-	}
-
-	public void setStudyProgram(String studyProgram) {
-		this.studyProgram = studyProgram;
-	}
-
 	public String getDepartment() {
 		return department;
 	}
@@ -102,5 +93,6 @@ public class Student {
 		this.faculty = faculty;
 	}
 	
+	public 
 	
 }
